@@ -12,7 +12,7 @@ function App() {
 
   const Layout = () => {
     return(
-      <div>
+      <div className="theme-dark">
         <Navbar />
         <div style={{ display: "flex"}}>
           <LeftBar />
@@ -20,8 +20,8 @@ function App() {
           <RightBar />
         </div>
       </div>
-    )
-  }
+    );
+  };
 
   const ProtectedRoute = ({children}) => {
     if(!currentUser){
