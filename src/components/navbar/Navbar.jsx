@@ -20,6 +20,7 @@ const Navbar = () => {
           <span>Be social.</span>
         </Link>
         <HomeOutlinedIcon />
+        <DarkModeOutlinedIcon />
         <GridViewOutlinedIcon />
         <div className="search">
           <SearchOutlinedIcon />
