@@ -4,14 +4,19 @@ export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(
-    JSON.parse(localStorage.getItem("user")) || null
+    JSON.parse(localStorage.getItem("user")) || ({
+      id: 1,
+      name: "Ashar Ali Khan",
+      profilePic:
+        "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    })
   );
 
   const login = () => {
     //TO DO
     setCurrentUser({
       id: 1,
-      name: "John Doe",
+      name: "Ashar Ali Khan",
       profilePic:
         "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
     });
